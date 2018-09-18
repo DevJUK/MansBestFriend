@@ -10261,6 +10261,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 10.7
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: d8779685d1813bd4d961c59b2ab2f9ea, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3809ed07fe31210449e82b969798d1f5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8779685d1813bd4d961c59b2ab2f9ea, type: 3}
   m_IsPrefabParent: 0
@@ -11506,6 +11510,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -105.829
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 7d8bef9b0ebde6e46966de69e61e6603, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd71c4cd46646e14cb997d79c5ec8d9c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d8bef9b0ebde6e46966de69e61e6603, type: 3}
   m_IsPrefabParent: 0
@@ -16437,7 +16445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad26582592b5891489403874eec77d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragSpeed: 14
+  DragSpeed: 20
 --- !u!136 &1967151555
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Doesn't work due to how the camera controls were made
+
 public class LimpScript : MonoBehaviour
 {
 
@@ -19,7 +22,7 @@ public class LimpScript : MonoBehaviour
 
 		if ((Timer > 4) && (isWalking == true))
 		{
-			Eyes.transform.rotation = Quaternion.Euler(Eyes.transform.rotation.x, Eyes.transform.rotation.y, Eyes.transform.rotation.z - 5);
+			Eyes.transform.rotation = Quaternion.Euler(Eyes.transform.rotation.x, Eyes.transform.rotation.y, 5);
 			Timer = 0;
 		}
 	}
