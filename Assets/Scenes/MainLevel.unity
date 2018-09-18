@@ -494,11 +494,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -514,8 +514,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a14732b23c623534485cc64b2561bbd5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9715853b7d64ff44fb219c30c1cfb7ff, type: 3}
   m_IsPrefabParent: 0
@@ -1464,7 +1468,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 157886412}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 15}
@@ -2437,6 +2441,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: acaa5830d5952734e8964b7941f27b61, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42db44c2cb2e47d43a5ac5e27b8cf3ef, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acaa5830d5952734e8964b7941f27b61, type: 3}
   m_IsPrefabParent: 0
@@ -2465,7 +2473,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 273128083}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 10}
@@ -16935,6 +16943,30 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8a7858a328e0cc544be4a345d79162af, type: 3}
+--- !u!23 &2011875105 stripped
+MeshRenderer:
+  m_PrefabParentObject: {fileID: 2300000, guid: 8a7858a328e0cc544be4a345d79162af,
+    type: 3}
+  m_PrefabInternal: {fileID: 1215966181}
+--- !u!114 &2011875107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011875102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5516a23e020ae419d452364941ba13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Textures:
+  - {fileID: 2800000, guid: e34f9b89881fd6b44befc08160c3cf94, type: 3}
+  - {fileID: 2800000, guid: 57aaf600d60573741ab4d2f60238726a, type: 3}
+  - {fileID: 2800000, guid: 558fe7a53919ca4469349195877ed0e0, type: 3}
+  - {fileID: 2800000, guid: 3f069022f3b0a4840997f2e7582f1e30, type: 3}
+  - {fileID: 2800000, guid: 51e9000ac691273499f5fd58d11d1e9c, type: 3}
+  Offset: 0.5
+  Rend: {fileID: 2011875105}
 --- !u!1001 &2022664830
 Prefab:
   m_ObjectHideFlags: 0

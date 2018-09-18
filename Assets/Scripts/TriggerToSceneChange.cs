@@ -11,11 +11,18 @@ public class TriggerToSceneChange : MonoBehaviour
 	public Rooms E_Rooms;
 
 	public GameObject GameController;
+	private GameController ControllerScript;
+
+	private void Start()
+	{
+		ControllerScript = GameController.GetComponent<GameController>(); 
+	}
 
 	private void OnTriggerEnter(Collider other)
 	{
-		GameController.GetComponent<GameController>().ChangeLevelScene(E_Rooms);
+		ControllerScript.ChangeLevelScene(E_Rooms);
 		GetComponent<BoxCollider>().enabled = false;
-		GameController.GetComponent<GameController>().SetPlayerPosition(GameObject.Find("Player").transform);
+		ControllerScript.SetGamesCompleted(ControllerScript.GetGamesCompleted() + 1);
+		ControllerScript.SetPlayerPosition(GameObject.Find("Player").transform);
 	}
 }

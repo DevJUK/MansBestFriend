@@ -53,3 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   E_Rooms: 0
   PlayerPosition: {fileID: 0}
+  GamesCompleted: 0

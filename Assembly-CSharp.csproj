@@ -106,10 +106,13 @@
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\ButtonChangeState.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\FallSceneScript.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\LimpScript.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ReturnToLevelScript.cs" />
+    <Compile Include="Assets\Scripts\TextureChange.cs" />
     <Compile Include="Assets\Scripts\TriggerToSceneChange.cs" />
     <Compile Include="Assets\SkySphere_V1\Examples\Gui.cs" />
     <Compile Include="Assets\SkySphere_V1\Examples\MouseLook.cs" />

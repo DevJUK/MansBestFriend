@@ -15,6 +15,7 @@ public enum Rooms		// Enum of scenes in the game
 	Minigame5,
 	Minigame6,
 	EndScene,
+	Fall,
 };
 
 
@@ -26,10 +27,20 @@ public class GameController : MonoBehaviour
 
 	public Transform PlayerPosition;
 
+	public int GamesCompleted = 0;
+
 
 	void Awake ()
 	{
 		DontDestroyOnLoad(gameObject);                          // Don't destroy the object the script is attached to
+	}
+
+	private void Update()
+	{
+		if (GamesCompleted == 6)
+		{
+			ChangeLevelScene(Rooms.EndScene);
+		}
 	}
 
 
@@ -76,6 +87,11 @@ public class GameController : MonoBehaviour
 				Time.timeScale = 1f;
 				break;
 
+			case Rooms.Fall:
+				SceneManager.LoadScene("FallScene");
+				Time.timeScale = 1f;
+				break;
+
 			default:
 				break;
 		}
@@ -89,6 +105,18 @@ public class GameController : MonoBehaviour
 	public Transform GetPlayerPosition()
 	{
 		return PlayerPosition;
+	}
+
+	public int GetGamesCompleted()
+	{
+		return GamesCompleted;
+	}
+
+
+
+	public void SetGamesCompleted(int Input)
+	{
+		GamesCompleted = Input;
 	}
 
 	public void SetPlayerPosition(Transform Input)

@@ -7,12 +7,6 @@ public class PlayerController : MonoBehaviour
 
     public float DragSpeed;
 
-
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
 	
 	// Update is called once per frame
 	void Update ()
