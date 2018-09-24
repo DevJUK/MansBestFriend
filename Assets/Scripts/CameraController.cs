@@ -30,11 +30,8 @@ public class CameraController : MonoBehaviour
         // getting the camera up in the starting position
         StartPos = new Vector3(Target.transform.position.x, Target.transform.position.y, Target.transform.position.z - 1);
 
-		// setting the camera up in the starting position
-		transform.position = StartPos;
-
 		// Sets up the offset to be the distance between the target and the camera
-		OffsetX = transform.position - Target.transform.position;
+		OffsetX = StartPos - Target.transform.position;
 
     }
 
@@ -54,6 +51,7 @@ public class CameraController : MonoBehaviour
 
     // At the end of each frame
 
+		
     void LateUpdate()
     {
 
@@ -63,5 +61,6 @@ public class CameraController : MonoBehaviour
         // Makes the camera look at the Target
         transform.LookAt(Target);
     }
+	
 
 }

@@ -10,6 +10,7 @@ public class LimpScript : MonoBehaviour
 
 	public Camera Eyes;
 
+
 	public float Timer;
 
 	public bool isWalking;
@@ -22,7 +23,8 @@ public class LimpScript : MonoBehaviour
 
 		if ((Timer > 4) && (isWalking == true))
 		{
-			Eyes.transform.rotation = Quaternion.Euler(Eyes.transform.rotation.x, Eyes.transform.rotation.y, 5);
+			// not working
+			Eyes.transform.rotation = Quaternion.AngleAxis(5, Vector3.left);
 			Timer = 0;
 		}
 	}

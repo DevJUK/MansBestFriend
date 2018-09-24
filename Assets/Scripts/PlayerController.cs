@@ -19,10 +19,10 @@ public class PlayerController : MonoBehaviour
         // Sets up the Vector3 for Movement using the inputted keyboard controls
         Vector3 Movement = new Vector3(moveHoz / DragSpeed, 0.0f, moveVer / DragSpeed);
 
-        // Point in direction of camera
-        Movement = Camera.main.transform.TransformDirection(Movement);
+		// Point in direction of camera
+		Movement = Camera.main.transform.TransformDirection(Movement);
 
-        transform.Translate(Movement);
+		transform.Translate(Movement);
 
 		if (!Input.anyKey)
 		{
